@@ -1,7 +1,29 @@
 aid: rtfkt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rtfkt.png
 name: RTFKT
-description: RTFKT is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  RTFKT (pronounced "artifact") was a digital-fashion and collectibles studio
+  founded in 2020 by Benoit Pagotto, Chris Le, and Steven Vasilev, known for
+  NFT-based virtual sneakers, wearables, and the CloneX avatar collection
+  created with artist Takashi Murakami. Backed by an a16z-led seed round, the
+  company was acquired by Nike in December 2021 and operated as a Web3 /
+  metaverse brand. Nike announced it was winding RTFKT down in December 2024,
+  with operations ceasing by the end of January 2025. RTFKT was a
+  consumer/collectibles brand and never published a public developer platform,
+  API, SDK, or documentation surface; its remaining web presence is a frozen
+  static archive page. This profile records that verified absence of an API
+  surface.
 url: https://raw.githubusercontent.com/api-evangelist/rtfkt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,32 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Digital Fashion
+- NFT
+- Collectibles
+- Web3
+- Metaverse
+- Nike
+- Consumer Brand
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rtfkt-domain-security.yml
+- type: Website
+  url: https://rtfkt.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
